@@ -23,7 +23,7 @@ Advertise Service for AminoApps.Com
 - python AminoAdvClique.py
 
 ### Windows
-Install python
-write commands to the console
-turn on the script
-Enjoy!
+- Install python
+- write commands to the console
+- turn on the script
+- enjoy!
