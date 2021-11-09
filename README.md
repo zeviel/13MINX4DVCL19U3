@@ -5,7 +5,7 @@ Advertise Service for AminoApps.Com
 - apt update -y
 - apt upgrade -y
 - pkg install python
-- pip install aminofix
+- pip install amino.fix
 - pip install pyfiglet
 - pip install sty
 - pip install tabulate
