@@ -38,7 +38,7 @@ async def community_advertise_process(sub_client: amino.AsyncSubClient, message:
     while True:
         try:
             print("-- Advertising...")
-            online_users = await sub_client.get_online_users(size=100).profile.userId
+            online_users = await sub_client.get_online_users(size=100).userId
             await asyncio.gather(*[asyncio.create_task(sub_client.start_chat(online_users, message)) for _ in range(50)])
         except amino.lib.util.exceptions.VerificationRequired as e:
             print(">> Error - VerificationRequired::: {e.args[0]['url']}") 
@@ -53,7 +53,7 @@ async def global_advertise_process(sub_client: amino.AsyncSubClient, message: st
     while True:
         try:
             print("-- Advertising...")
-            online_users = await sub_client.get_online_users(size=100).profile.userId
+            online_users = await sub_client.get_online_users(size=100).userId
             await asyncio.gather(*[asyncio.create_task(client.start_chat(users, message)) for _ in range(50)])
         except amino.lib.util.exceptions.VerificationRequired as e:
             print(">> Error - VerificationRequired::: {e.args[0]['url']}") 
@@ -71,7 +71,7 @@ async def using_one_account(sub_client: amino.AsyncSubClient, message: str):
     while True:
         try:
             print(">> Advertising To Selected User...")
-            await asyncio.gather(*[asyncio.create_task(sub_client.start_chat([client.userId, user_Id], message)) for _ in range(50)])
+            await asyncio.gather(*[asyncio.create_task(sub_client.start_chat([client.userId, user_id], message)) for _ in range(50)])
         except amino.lib.util.exceptions.VerificationRequired as e:
             print(">> Error - VerificationRequired::: {e.args[0]['url']}") 
             verification = input("-- Press enter after verification...")
