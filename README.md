@@ -17,7 +17,7 @@ Advertise service for amino
 - pip install amino.py
 - pip install pyfiglet
 - pip install tabulate
-- git clone https://github.com/deluvsushi/13MINX4DVCL19U3
+- git clone https://github.com/zeviel/13MINX4DVCL19U3
 - cd 13MINX4DVCL19U3
 - python 13MINX4DVCL19U3.py
 ```
