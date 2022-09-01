@@ -1,14 +1,7 @@
 
 main_menu = [
-    ["Menu", "AminoAdvClique"],
-    ["1", "Global Advertise"],
-    ["2", "Community Advertise"],
-    ["3", "Advertise To Selected User"]
-]
-
-
-additional_menu = [
-    ["Menu", "AminoAdvClique"],
-    ["1", "Using One Account"],
-    ["2", "Using Multiple Accounts"]
+    ["Menu", "13MINX4DVCL19U3"],
+    [1, "advertise in global"],
+    [2, "advertise in community"],
+    [3, "advertise to user"]
 ]
